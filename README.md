@@ -7,7 +7,7 @@ An iOS Shortcuts for checking Genshin Impact in-game resin status
 
 ## 安装
 
-树脂查询：https://www.icloud.com/shortcuts/14b30b445b0d4e2d8b93b75a21184fdb
+树脂查询：https://www.icloud.com/shortcuts/0cd3ffee1bd04439b7dfd20936c64fad
 
 
 ## 使用说明
