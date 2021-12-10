@@ -6,9 +6,9 @@ Shortcuts for checking Genshin Impact in-game resin status
 
 ## 安装
 
-获取Cookie：https://www.icloud.com/shortcuts/e8cbc205c1564b32a947fb4ccb85a8c4
+获取Cookie：https://www.icloud.com/shortcuts/ad178a584f13445ea3885768df8f0ce9
 
-树脂查询：https://www.icloud.com/shortcuts/14b30b445b0d4e2d8b93b75a21184fdb 
+树脂查询：https://www.icloud.com/shortcuts/ace1591044f24795baa9e23364fa49e7
 
 获取Cookie部分因为iOS系统限制，只能从Safari分享运行，只能做成2各部分
 
