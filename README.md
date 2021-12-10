@@ -1,7 +1,8 @@
 # iOS树脂查询快捷指令
 
 Shortcuts for checking Genshin Impact in-game resin status
- ![Image 1](./img/3.png)
+
+<img src="./img/3.png" width=50% height=50%>
 
 ## 安装
 
@@ -17,8 +18,9 @@ Shortcuts for checking Genshin Impact in-game resin status
 1) 分别安装两部分快捷指令
 2) Safari打开并登录米游社: [https://m.bbs.mihoyo.com/ys](https://m.bbs.mihoyo.com/ys)
 3) 点击分享，获取米游社信息，并确认运行权限
-![Image 2](./img/1.png)
-![Image 3](./img/2.png)
+<img src="./img/1.png" width=50% height=50%>
+
+<img src="./img/2.png" width=50% height=50%>
 4) 之后可直接通过"查询树脂"，直接查询无需再次打开Safari
 
 
