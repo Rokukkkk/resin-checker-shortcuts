@@ -1,6 +1,6 @@
 # iOS树脂查询快捷指令
 
- __Shortcuts for checking Genshin Impact in-game resin status
+Shortcuts for checking Genshin Impact in-game resin status
  ![Image 1](./img/3.png)
 
 ## 安装
