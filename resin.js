@@ -1,9 +1,11 @@
 // Variables used by Scriptable.
 // These must be at the very top of the file. Do not edit.
+// icon-color: gray; icon-glyph: magic;
+// Variables used by Scriptable.
+// These must be at the very top of the file. Do not edit.
 
 const config = new Array()
 // ========= ↓将生成的配置粘贴这以下↓=========
-
 
 
 // ========= ↑将生成的配置粘贴这以上↑ ========
@@ -40,7 +42,7 @@ async function createWidget() {
   titleElement.textColor = Color.white()
   titleElement.textOpacity = 0.6
   titleElement.font = Font.mediumSystemFont(15)
-  widget.addSpacer(20)
+  widget.addSpacer(8)
   // Show data
   let data = await getData()
   let nameElement = widget.addText(data[0]+ "/160")
@@ -51,7 +53,11 @@ async function createWidget() {
   nameElement2.textColor = Color.white()
   nameElement2.textOpacity = 0.5
   nameElement2.font = Font.mediumRoundedSystemFont(15)
-  widget.addSpacer(20)
+  widget.addSpacer(2)
+  let nameElement3 = widget.addText("(" + await getClock() + ")")
+  nameElement3.textColor = Color.white()
+  nameElement3.textOpacity = 0.5
+  nameElement3.font = Font.mediumRoundedSystemFont(12)
 
   if (!config.runsWithSiri) {
     widget.addSpacer(8)
@@ -102,6 +108,25 @@ async function getTime() {
   let mm = ~~((time%3600)/60)
   
   return hh + "小时" + mm + "分钟"
+}
+
+async function getClock() {
+  let data = await getData()
+  let timeNow = Date.now()
+  let time = new Date(timeNow + data[1]*1000)
+  let str = ""
+  if(time.getDay()== 1) {
+    str = "次日"
+  }
+  else if(time.getDay() == 0){
+    str = "本日"
+  }
+  else {
+    str = "后天"
+  }
+  
+  
+  return " " + str + ", " + time.getHours() + "点" + time.getMinutes() + "分"
 }
 
 async function loadAppIcon() {
