@@ -26,6 +26,6 @@ An iOS Shortcuts for checking Genshin Impact in-game resin status
 配置生成：https://www.icloud.com/shortcuts/30f685a6408d474ea579aae2750dbcf2
 
 1) 复制./resin.js内全部代码到 新建Scriptable脚本
-2) 使用方法同上第2,3步，在米游社页面分享执行。
+2) 使用方法同上第2,3步，在米游社页面分享执行
 3) 配置将自动复制到剪切板，粘贴到脚本指定地点
 4) 添加小部件（推荐大小：小，中）
