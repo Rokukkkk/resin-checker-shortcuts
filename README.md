@@ -22,7 +22,7 @@ An iOS Shortcuts for checking Genshin Impact in-game resin status
 
 
 ## Scriptable小部件
-<img src="./img/2.png" width=50% height=50%>
+<img src="./img/2.PNG" width=50% height=50%>
 
 配置生成：https://www.icloud.com/shortcuts/30f685a6408d474ea579aae2750dbcf2
 
