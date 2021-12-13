@@ -1,8 +1,5 @@
 // Variables used by Scriptable.
 // These must be at the very top of the file. Do not edit.
-// icon-color: gray; icon-glyph: magic;
-// Variables used by Scriptable.
-// These must be at the very top of the file. Do not edit.
 
 const config = new Array()
 // ========= ↓将生成的配置粘贴这以下↓=========
@@ -112,21 +109,29 @@ async function getTime() {
 
 async function getClock() {
   let data = await getData()
+
   let timeNow = Date.now()
-  let time = new Date(timeNow + data[1]*1000)
+  let now = new Date(timeNow)
+  let hoursNow = now.getHours()
+  let minutesNow = now.getMinutes()
+  let timeRecovery = new Date(timeNow + data[1]*1000)
+
+  let tillTommorow = (24-hoursNow)*3600*1000
+  let tillDayAfterTommorow = tillTommorow + 24*3600*1000
+
+  let tommorow = timeNow + tillTommorow
+  let dayAfterTommorow = timeNow + tillDayAfterTommorow
+  
   let str = ""
-  if(time.getDay()== 1) {
-    str = "次日"
-  }
-  else if(time.getDay() == 0){
+  if(timeRecovery < tommorow){
     str = "本日"
-  }
-  else {
+  }else if(timeRecovery >= tommorow && timeRecovery < dayAfterTommorow){
+    str = "次日"
+  }else{
     str = "后天"
   }
-  
-  
-  return " " + str + ", " + time.getHours() + "点" + time.getMinutes() + "分"
+
+  return " " + str + ", " + timeRecovery.getHours() + "点" + timeRecovery.getMinutes() + "分"
 }
 
 async function loadAppIcon() {
