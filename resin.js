@@ -4,7 +4,6 @@
 const config = new Array()
 // ========= ↓将生成的配置粘贴这以下↓=========
 
-
 // ========= ↑将生成的配置粘贴这以上↑ ========
 
 
@@ -113,14 +112,15 @@ async function getClock() {
   let timeNow = Date.now()
   let now = new Date(timeNow)
   let hoursNow = now.getHours()
-  let minutesNow = now.getMinutes()
+  let minutesNow = now.getMinutes()*60*1000
+  let secondsNow = now.getSeconds()*1000
   let timeRecovery = new Date(timeNow + data[1]*1000)
 
   let tillTommorow = (24-hoursNow)*3600*1000
   let tillDayAfterTommorow = tillTommorow + 24*3600*1000
 
-  let tommorow = timeNow + tillTommorow
-  let dayAfterTommorow = timeNow + tillDayAfterTommorow
+  let tommorow = timeNow + tillTommorow - minutesNow - secondsNow
+  let dayAfterTommorow = timeNow + tillDayAfterTommorow - minutesNow - secondsNow
   
   let str = ""
   if(timeRecovery < tommorow){
