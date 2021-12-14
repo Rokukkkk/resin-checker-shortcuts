@@ -24,9 +24,7 @@ An iOS Shortcuts for checking Genshin Impact in-game resin status
 ## Scriptable小部件
 <img src="./img/2.PNG" width=50% height=50%>
 
-配置生成：https://www.icloud.com/shortcuts/30f685a6408d474ea579aae2750dbcf2
-
-1) 复制./resin.js内全部代码到 新建Scriptable脚本
-2) 使用方法同上第2,3步，在米游社页面分享执行
-3) 配置将自动复制到剪切板，粘贴到脚本指定地点
-4) 添加小部件（推荐大小：小，中）
+1) App Store下载安装"Scriptable"
+2) 添加配置生成快捷指令：https://www.icloud.com/shortcuts/1beb664713a242f68aaf279e4e7b37d1
+3) 运行指令根据提示进行设置(期间权限选允许或始终允许)
+4) 桌面或负一屏添加即可(推荐大小：小或中)
