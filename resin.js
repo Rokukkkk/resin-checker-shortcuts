@@ -125,10 +125,8 @@ async function getClock() {
   let str = ""
   if(timeRecovery < tommorow){
     str = "本日"
-  }else if(timeRecovery >= tommorow && timeRecovery < dayAfterTommorow){
-    str = "次日"
   }else{
-    str = "后天"
+    str = "次日"
   }
 
   return " " + str + ", " + timeRecovery.getHours() + "点" + timeRecovery.getMinutes() + "分"
