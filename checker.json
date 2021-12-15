@@ -1,7 +1,7 @@
 {
     "checker":{
-        "ver":"1.7",
-        "url":"https://www.icloud.com/shortcuts/dedd8634d38c484988b6e035e131507b",
-        "note":"增加更新内容提示和具体回满时间"
+        "ver":"1.8",
+        "url":"https://www.icloud.com/shortcuts/2b4d8c8df0404a28abdbd6d5a487f06d",
+        "note":"优化错误判断逻辑"
     }
 }
