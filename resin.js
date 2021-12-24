@@ -43,7 +43,7 @@ async function createWidget() {
   let data = await getData()
   let nameElement = widget.addText(data[0]+ "/160")
   nameElement.textColor = Color.white()
-  nameElement.font = Font.boldRoundedSystemFont(29)
+  nameElement.font = Font.boldRoundedSystemFont(28)
   widget.addSpacer(2)
   let nameElement2 = widget.addText(await getTime())
   nameElement2.textColor = Color.white()
