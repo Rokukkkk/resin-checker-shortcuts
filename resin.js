@@ -45,12 +45,12 @@ async function createWidget() {
   nameElement.textColor = Color.white()
   nameElement.font = Font.boldRoundedSystemFont(28)
   widget.addSpacer(2)
-  let nameElement2 = widget.addText(await getTime())
+  let nameElement2 = widget.addText(getTime(data))
   nameElement2.textColor = Color.white()
   nameElement2.textOpacity = 0.5
   nameElement2.font = Font.mediumRoundedSystemFont(15)
   widget.addSpacer(2)
-  let nameElement3 = widget.addText("(" + await getClock() + ")")
+  let nameElement3 = widget.addText("(" + getClock(data) + ")")
   nameElement3.textColor = Color.white()
   nameElement3.textOpacity = 0.5
   nameElement3.font = Font.mediumRoundedSystemFont(12)
@@ -97,8 +97,7 @@ async function getData() {
   return [data.current_resin, data.resin_recovery_time]
 }
 
-async function getTime() {
-  let data = await getData()
+function getTime(data) {
   let time = data[1]
   let hh = ~~(time/3600)
   let mm = ~~((time%3600)/60)
@@ -106,9 +105,7 @@ async function getTime() {
   return hh + "小时" + mm + "分钟"
 }
 
-async function getClock() {
-  let data = await getData()
-
+function getClock(data) {
   let timeNow = Date.now()
   let now = new Date(timeNow)
   let hoursNow = now.getHours()
@@ -325,5 +322,3 @@ function md5(string){
     }
 return (md5_WordToHex(a)+md5_WordToHex(b)+md5_WordToHex(c)+md5_WordToHex(d)).toLowerCase();
 }
-
-
