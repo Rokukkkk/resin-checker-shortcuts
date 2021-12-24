@@ -1,7 +1,7 @@
 {
     "checker":{
-        "ver":"1.8",
-        "url":"https://www.icloud.com/shortcuts/2b4d8c8df0404a28abdbd6d5a487f06d",
-        "note":"优化错误判断逻辑"
+        "ver":"1.9",
+        "url":"https://www.icloud.com/shortcuts/5c1d677bd3014fb7a2eaa1965997a078",
+        "note":"修复米游社API链接更新导致的错误"
     }
 }
