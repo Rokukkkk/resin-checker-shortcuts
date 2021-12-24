@@ -80,7 +80,7 @@ async function getData() {
   let timestamp = Math.floor(Date.now() / 1000)
   let sign = md5("salt=xV8v4Qu54lUKrEYFZkJhB8cuOh9Asafs&t=" + timestamp + "&r="+ randomStr + "&b=&q=role_id=" + config[0] + "&server=" + config[1])
   
-  let req = new Request("https://api-takumi.mihoyo.com/game_record/app/genshin/api/dailyNote?server=" + config[1] + "&role_id=" + config[0])
+  let req = new Request("https://api-takumi-record.mihoyo.com/game_record/app/genshin/api/dailyNote?server=" + config[1] + "&role_id=" + config[0])
   req.method = "get"
   req.headers = {
     "DS": timestamp + "," + randomStr + "," + sign,
