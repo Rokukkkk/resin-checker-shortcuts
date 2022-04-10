@@ -1,4 +1,4 @@
-# iOS树脂查询快捷指令
+# iOS树脂查询快捷指令/Scriptable
 
 An iOS Shortcut for checking Genshin Impact in-game resin status
 
