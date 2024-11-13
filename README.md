@@ -1,6 +1,7 @@
 # iOS树脂查询快捷指令 & Scriptable小组件
 
 >**This script is outdated, please consider using the official HoyoLab app widget**
+
 An iOS Shortcut & a widget script for checking Genshin Impact in-game resin status
 
 <img src="./img/1.png" width=30% height=30%>
